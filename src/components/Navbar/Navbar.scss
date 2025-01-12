@@ -1,0 +1,69 @@
+@use "../../css-config/Mixin.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#nav {
+  height: 90px;
+  width: 100%;
+  max-width: 12000px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: rgb(80, 39, 6);
+
+  #logo {
+    height: 120px;
+    width: calc(100% - 80%);
+
+    // background-color: blue;
+  }
+
+  #routers {
+    height: auto;
+    width: calc(100% - 30%);
+    // background-color: grey;
+
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      text-decoration: none;
+      list-style: none;
+      gap: 100px;
+
+      .routes {
+        display: flex;
+        font-size: 1.09rem;
+        color: #ffff;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+        display: none;
+
+        @include Mixin.md {
+          display: contents;
+        }
+
+        &:hover {
+          transform: scale(1.4);
+          color: #ffffffbb;
+        }
+        span {
+          display: contents;
+
+          @include Mixin.md {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  #toggle {
+    height: 100px;
+    width: calc(100% - 90%);
+    // background-color: red;
+  }
+}
