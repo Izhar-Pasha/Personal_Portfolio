@@ -1,0 +1,77 @@
+@use "../../css-config/Mixin.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#skills {
+  height: 100vh;
+  width: 80%;
+  background-color: #543a14;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  #header {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      color: rgba(255, 255, 255, 0.5);
+    }
+    p {
+      height: 2px;
+      width: 12%;
+      border-radius: 10px;
+      background-color: blue;
+    }
+  }
+
+  #content {
+    height: 50vh;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    .skill {
+      height: 100px;
+      flex: 0 0 100px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 14px;
+      gap: 10px;
+      border-radius: 10px;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        cursor: pointer;
+        -webkit-box-shadow: 5px 7px 11px -0.5px #1a0909;
+        -moz-box-shadow: 5px 7px 11px -0.5px #1a0909;
+        box-shadow: 5px 7px 11px -0.5px #1a0909;
+        transform: scale(1.12);
+        background-color: rgba(255, 255, 255, 0.9);
+      }
+
+      img {
+        height: 48px;
+        width: 48px;
+      }
+
+      h6 {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

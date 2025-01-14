@@ -1,0 +1,111 @@
+@use "../../css-config/Mixin.scss";
+
+* {
+  margin: 0;
+  padding: 5px;
+  box-sizing: border-box;
+}
+#Experience {
+  height: 100vh;
+  width: 100%;
+  background-color: antiquewhite;
+
+  #header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+
+    .history {
+      height: fit-content;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.2s ease-in-out;
+
+      @include Mixin.md {
+        height: fit-content;
+        width: 70%;
+      }
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.01);
+        background-color: rgba(255, 255, 255, 0.448);
+        -webkit-box-shadow: 5px 7px 11px -0.5px #1a0909;
+        -moz-box-shadow: 5px 7px 11px -0.5px #1a0909;
+        box-shadow: 5px 7px 11px -0.5px #1a0909;
+      }
+
+      .company {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include Mixin.md {
+          width: 80%;
+        }
+
+        h1 {
+          font-size: 1rem;
+
+          @include Mixin.md {
+            font-size: 1.5rem;
+          }
+        }
+        span {
+          font-size: 0.9rem;
+
+          @include Mixin.md {
+            font-size: 1.2rem;
+          }
+        }
+      }
+      .duration {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        i {
+          font-weight: bold;
+          columns: rgb(8, 8, 95);
+        }
+        p {
+          height: 2px;
+          width: 2%;
+          margin: 0px 4px 0px 4px;
+          padding: 0;
+          background-color: black;
+        }
+      }
+      .role {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+
+        ul {
+          padding: 10px;
+
+          li {
+            list-style: disc;
+            font-size: 0.9rem;
+
+            @include Mixin.md {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

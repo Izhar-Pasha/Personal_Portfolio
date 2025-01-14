@@ -1,0 +1,67 @@
+@use "../../css-config/Mixin.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#home {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #543a14;
+  gap: 20px;
+
+  @include Mixin.md {
+    height: 100vh;
+    width: calc(100% - 25%);
+  }
+
+  #header {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      color: rgba(255, 255, 255, 0.368);
+    }
+    p {
+      height: 2px;
+      width: 20%;
+      border-radius: 10px;
+      background-color: blue;
+    }
+  }
+
+  #content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h1 {
+      color: #ffff;
+    }
+
+    h3 {
+      font-weight: bolder;
+      background: linear-gradient(
+        45deg,
+        rgb(242, 23, 23),
+        rgb(167, 19, 95),
+        aqua
+      );
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    p {
+      color: #ffff;
+    }
+  }
+}

@@ -1,0 +1,148 @@
+@use "../../css-config/Mixin.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#sidebar {
+  height: 25vh;
+  width: 100%;
+  background-color: #543a14;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  gap: 10px;
+
+  @include Mixin.md {
+    height: 100vh;
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0;
+  }
+
+  #photo {
+    height: 120px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgb(225, 255, 0);
+    -webkit-box-shadow: 5px 7px 11px -0.5px #1a0909;
+    -moz-box-shadow: 5px 7px 11px -0.5px #1a0909;
+    box-shadow: 5px 7px 11px -0.5px #1a0909;
+
+    @include Mixin.md {
+      height: 220px;
+      width: 90%;
+      border-radius: 30px;
+    }
+
+    img {
+      height: 120px;
+      width: 120px;
+
+      @include Mixin.md {
+        height: 280px;
+        width: 280px;
+      }
+    }
+  }
+
+  #text-content {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+
+    @include Mixin.md {
+      height: auto;
+      width: 100%;
+    }
+
+    h1 {
+      //   text-align: center;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white;
+
+      @include Mixin.md {
+        font-size: 2rem;
+      }
+    }
+
+    h3 {
+      font-size: 0.6rem;
+      font-weight: bolder;
+      background: linear-gradient(
+        45deg,
+        rgb(242, 23, 23),
+        rgb(167, 19, 95),
+        aqua
+      );
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+
+      @include Mixin.md {
+        font-size: 0.9rem;
+      }
+    }
+
+    p {
+      font-size: 0.7rem;
+      color: rgba(255, 255, 255, 0.648);
+
+      @include Mixin.md {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  #social-icons {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    // background-color: red;
+
+    @include Mixin.md {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+
+    a {
+      font-size: 1.2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      border-radius: 50%;
+      color: white;
+
+      @include Mixin.md {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &:hover {
+        cursor: pointer;
+        color: yellowgreen;
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}

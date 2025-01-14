@@ -11,20 +11,32 @@
   max-width: 12000px;
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   gap: 10px;
   background-color: rgb(80, 39, 6);
 
-  #logo {
-    height: 120px;
-    width: calc(100% - 80%);
+  // #logo {
+  //   height: 120px;
+  //   width: calc(100% - 80%);
+  //   // background-color: blue;
 
-    // background-color: blue;
-  }
+  //   @include Mixin.md {
+  //   }
+
+  //   img {
+  //     height: 60px;
+  //     width: 100px;
+  //   }
+  // }
 
   #routers {
     height: auto;
-    width: calc(100% - 30%);
+    width: calc(100% - 26%);
     // background-color: grey;
+
+    @include Mixin.md {
+      width: calc(100% - 30%);
+    }
 
     ul {
       display: flex;
@@ -32,29 +44,46 @@
       justify-content: flex-end;
       text-decoration: none;
       list-style: none;
-      gap: 100px;
+      gap: 35px;
+
+      @include Mixin.md {
+        gap: 100px;
+      }
 
       .routes {
         display: flex;
         font-size: 1.09rem;
         color: #ffff;
         text-decoration: none;
-        transition: all 0.2s ease-in-out;
-        display: none;
+        transition: transform 0.2s ease-in-out;
 
         @include Mixin.md {
-          display: contents;
+          transition: transform 0.2s ease-in-out;
         }
 
         &:hover {
           transform: scale(1.4);
           color: #ffffffbb;
         }
-        span {
+
+        .icon {
           display: contents;
 
           @include Mixin.md {
             display: none;
+          }
+          img {
+            height: 35px;
+            width: 35px;
+            // background-color: red;
+          }
+        }
+
+        .text {
+          display: none;
+
+          @include Mixin.md {
+            display: contents;
           }
         }
       }
@@ -65,5 +94,20 @@
     height: 100px;
     width: calc(100% - 90%);
     // background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      position: absolute;
+      // top: 10px;
+      height: 25px;
+      width: 25px;
+
+      @include Mixin.md {
+        height: 35px;
+        width: 35px;
+      }
+    }
   }
 }
