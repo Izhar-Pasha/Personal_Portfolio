@@ -6,14 +6,14 @@
   box-sizing: border-box;
 
   #nav {
-    height: 90px;
+    height: 10vh;
     width: 100%;
     max-width: 12000px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     gap: 10px;
-    background-color: rgb(80, 39, 6);
+    background-color: #543a14;
 
     // #logo {
     //   height: 120px;
@@ -32,7 +32,6 @@
     #routers {
       height: auto;
       width: calc(100% - 26%);
-      // background-color: grey;
 
       @include Mixin.md {
         width: calc(100% - 30%);
@@ -62,20 +61,22 @@
           }
 
           &:hover {
-            transform: scale(1.4);
+            transform: scale(1.2);
             color: #ffffffbb;
           }
 
           .icon {
+            // font-size: 1rem;
             display: contents;
+            background-color: red;
 
             @include Mixin.md {
               display: none;
             }
+
             img {
-              height: 35px;
-              width: 35px;
-              // background-color: red;
+              height: 38px;
+              width: 38px;
             }
           }
 
@@ -83,7 +84,7 @@
             display: none;
 
             @include Mixin.md {
-              font-size: 1.4rem;
+              font-size: 1.2rem;
               display: contents;
             }
           }

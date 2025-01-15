@@ -3,6 +3,7 @@ import profile_picture from "../../assets/Profile-Picture.png";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const Sidebar = () => {
   return (
@@ -19,14 +20,38 @@ const Sidebar = () => {
         </p>
       </div>
       <div id="social-icons">
-        <a href="">
+        <a
+          href="https://github.com/Izhar-Pasha"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaGithub />
         </a>
-        <a href="">
+        <a
+          href="https://www.linkedin.com/in/izharpasha/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaLinkedin />
         </a>
-        <a href="">
+        <a
+          href="mailto:mdizharpasha07@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <IoMail />
+        </a>
+      </div>
+      <div id="resume">
+        <a
+          href="https://drive.google.com/file/d/1fZ4EQSpT1URRJt9QugaNA434si70kMao/view?usp=drive_link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Resume
+          <span>
+            <FaArrowRightLong />
+          </span>
         </a>
       </div>
     </div>

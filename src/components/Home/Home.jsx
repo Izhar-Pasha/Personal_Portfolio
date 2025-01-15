@@ -5,8 +5,11 @@ const Home = () => {
   return (
     <div id="home">
       <div id="header">
-        <h1>INTRODUCTION</h1>
-        <p></p>
+        <h1>Introduction</h1>
+        <p>
+          Turning creativity into reality with expertise in coding, design, and
+          problem-solving. Let’s build something extraordinary together.
+        </p>
       </div>
       <div id="content">
         <h1>

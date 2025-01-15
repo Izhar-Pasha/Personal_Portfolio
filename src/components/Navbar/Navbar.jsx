@@ -6,7 +6,7 @@ import "./Navbar.scss";
 import profile from "../../assets/Profile.png";
 import project from "../../assets/Project.png";
 import skills from "../../assets/Skills.png";
-import contact from "../../assets/Contact.png";
+// import contact from "../../assets/Contact.png";
 import experience from "../../assets/Experience.png";
 
 const Navbar = () => {
@@ -47,14 +47,14 @@ const Navbar = () => {
               <span className="text">Experience</span>
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/contact" className="routes">
               <span className="icon">
                 <img src={contact} alt="profile.png" />
               </span>
               <span className="text">Contact</span>
             </Link>
-          </li>
+          </li> */}
         </ul>
       </div>
       {/* <div id="toggle">
