@@ -4,110 +4,112 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-#nav {
-  height: 90px;
-  width: 100%;
-  max-width: 12000px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  gap: 10px;
-  background-color: rgb(80, 39, 6);
 
-  // #logo {
-  //   height: 120px;
-  //   width: calc(100% - 80%);
-  //   // background-color: blue;
+  #nav {
+    height: 90px;
+    width: 100%;
+    max-width: 12000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    background-color: rgb(80, 39, 6);
 
-  //   @include Mixin.md {
-  //   }
+    // #logo {
+    //   height: 120px;
+    //   width: calc(100% - 80%);
+    //   // background-color: blue;
 
-  //   img {
-  //     height: 60px;
-  //     width: 100px;
-  //   }
-  // }
+    //   @include Mixin.md {
+    //   }
 
-  #routers {
-    height: auto;
-    width: calc(100% - 26%);
-    // background-color: grey;
+    //   img {
+    //     height: 60px;
+    //     width: 100px;
+    //   }
+    // }
 
-    @include Mixin.md {
-      width: calc(100% - 30%);
-    }
-
-    ul {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      text-decoration: none;
-      list-style: none;
-      gap: 35px;
+    #routers {
+      height: auto;
+      width: calc(100% - 26%);
+      // background-color: grey;
 
       @include Mixin.md {
-        gap: 100px;
+        width: calc(100% - 30%);
       }
 
-      .routes {
+      ul {
         display: flex;
-        font-size: 1.09rem;
-        color: #ffff;
+        align-items: center;
+        justify-content: flex-end;
         text-decoration: none;
-        transition: transform 0.2s ease-in-out;
+        list-style: none;
+        gap: 15px;
 
         @include Mixin.md {
+          gap: 100px;
+        }
+
+        .routes {
+          display: flex;
+          font-size: 1.09rem;
+          color: #ffff;
+          text-decoration: none;
           transition: transform 0.2s ease-in-out;
-        }
-
-        &:hover {
-          transform: scale(1.4);
-          color: #ffffffbb;
-        }
-
-        .icon {
-          display: contents;
 
           @include Mixin.md {
-            display: none;
+            transition: transform 0.2s ease-in-out;
           }
-          img {
-            height: 35px;
-            width: 35px;
-            // background-color: red;
+
+          &:hover {
+            transform: scale(1.4);
+            color: #ffffffbb;
           }
-        }
 
-        .text {
-          display: none;
-
-          @include Mixin.md {
+          .icon {
             display: contents;
+
+            @include Mixin.md {
+              display: none;
+            }
+            img {
+              height: 35px;
+              width: 35px;
+              // background-color: red;
+            }
+          }
+
+          .text {
+            display: none;
+
+            @include Mixin.md {
+              font-size: 1.4rem;
+              display: contents;
+            }
           }
         }
       }
     }
-  }
 
-  #toggle {
-    height: 100px;
-    width: calc(100% - 90%);
-    // background-color: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // #toggle {
+    //   height: 100px;
+    //   width: calc(100% - 90%);
+    //   // background-color: red;
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
 
-    img {
-      position: absolute;
-      // top: 10px;
-      height: 25px;
-      width: 25px;
+    //   img {
+    //     position: absolute;
+    //     // top: 10px;
+    //     height: 25px;
+    //     width: 25px;
 
-      @include Mixin.md {
-        height: 35px;
-        width: 35px;
-      }
-    }
+    //     @include Mixin.md {
+    //       height: 35px;
+    //       width: 35px;
+    //     }
+    //   }
+    // }
   }
 }

@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import "./Navbar.scss";
-import logo from "../../assets/logo.gif";
-import darkmode from "../../assets/darkmode.png";
-import lightmode from "../../assets/lightmode.png";
+// import logo from "../../assets/logo.gif";
+// import darkmode from "../../assets/darkmode.png";
+// import lightmode from "../../assets/lightmode.png";
 import profile from "../../assets/Profile.png";
 import project from "../../assets/Project.png";
 import skills from "../../assets/Skills.png";
@@ -16,7 +16,7 @@ const Navbar = () => {
       <div id="routers">
         <ul>
           <li>
-            <Link to="/home" className="routes">
+            <Link to="/" className="routes">
               <span className="icon">
                 <img src={profile} alt="profile.png" title="Profile" />
               </span>
@@ -57,10 +57,10 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div id="toggle">
+      {/* <div id="toggle">
         <img src={darkmode} alt="darkmode.png" id="dark" />
         <img src={lightmode} alt="lightmode.png" id="light" />
-      </div>
+      </div> */}
     </nav>
   );
 };

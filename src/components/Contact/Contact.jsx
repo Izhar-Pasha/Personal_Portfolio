@@ -10,6 +10,8 @@ const Contact = () => {
           something impactful and memorable.
         </p>
       </div>
+
+      <form action="mailto:mdizharpasha07@gmail.com"></form>
     </div>
   );
 };
