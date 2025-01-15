@@ -9,7 +9,7 @@ const Skills = () => {
   return (
     <div id="skills">
       <div id="header">
-        <h1>TECH SKILLS</h1>
+        <h1>Tech Skills</h1>
         <p>
           Mastering in-demand tools and technologies to create efficient,
           scalable, and user-focused solutions. From backend logic to frontend

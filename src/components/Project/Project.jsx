@@ -1,6 +1,8 @@
 import "./Project.scss";
 import link from "../../assets/link.png";
 import P1 from "../../assets/P1.png";
+import P2 from "../../assets/P2.png";
+import P3 from "../../assets/P3.png";
 
 const Project = () => {
   return (
@@ -17,19 +19,27 @@ const Project = () => {
       <div id="projects">
         <div className="project">
           <div className="project-image">
-            <img src={P1} alt="" />
+            <img src={P2} alt="" />
           </div>
 
           <div className="content">
             <div className="heading">
-              <span>E-COMMERCE</span>
-              <a href="/image">
+              <span>Task Management System</span>
+              <a
+                href="https://task-management-brown-eight.vercel.app/"
+                target="_blank"
+                rel="nooperner noreference"
+              >
                 <img src={link} alt="link.png" />
               </a>
             </div>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
-              in aliquid corporis dolor reprehenderit nemo ratione porro.
+              Design and Developed Task management system to manage the
+              important task with user friendly design patterns.
+              <br />
+              <br />
+              Techs Used : Node JS, Express JS, React JS, Restfull API's and
+              more....
             </p>
           </div>
         </div>
@@ -42,37 +52,51 @@ const Project = () => {
           <div className="content">
             <div className="heading">
               <span>E-COMMERCE</span>
-              <a href="/image">
+              <a
+                href="https://e-commerce-sooty-gamma.vercel.app/"
+                target="_blank"
+                rel="nooperner noreference"
+              >
                 <img src={link} alt="link.png" />
               </a>
             </div>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
-              in aliquid corporis dolor reprehenderit nemo ratione porro.
+              Design and Developed E-Commerce web app for food Orders.
+              <br />
+              <br />
+              Techs Used : Node JS, Express JS, Validation, React JS, Sass and
+              more....
             </p>
           </div>
         </div>
 
         <div className="project">
           <div className="project-image">
-            <img src={P1} alt="" />
+            <img src={P3} alt="Project.png" />
           </div>
 
           <div className="content">
             <div className="heading">
-              <span>E-COMMERCE</span>
-              <a href="/image">
+              <span>Job Finder</span>
+              <a
+                href="https://izhar-pasha.github.io/Job-Finder/"
+                target="_blank"
+                rel="nooperner noreference"
+              >
                 <img src={link} alt="link.png" />
               </a>
             </div>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
-              in aliquid corporis dolor reprehenderit nemo ratione porro.
+              Design and Developed Get Hired.com to show case my skills and tech
+              experience.
+              <br />
+              <br />
+              Techs Used : React JS, Tailwind CSS, Sass and more....
             </p>
           </div>
         </div>
 
-        <div className="project">
+        {/* <div className="project">
           <div className="project-image">
             <img src={P1} alt="link.png" />
           </div>
@@ -89,7 +113,7 @@ const Project = () => {
               in aliquid corporis dolor reprehenderit nemo ratione porro.
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
