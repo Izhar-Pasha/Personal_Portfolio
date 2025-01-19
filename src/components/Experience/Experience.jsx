@@ -1,10 +1,21 @@
 // import React from 'react'
 import "./Experience.scss";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+import AOS from "aos";
 
 const Experience = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in ms
+      once: true, // Whether animation should happen only once
+      easing: "ease-in-out", // Easing function
+    });
+  }, []);
+
   return (
     <div id="Experience">
-      <div id="header">
+      <div id="header" data-aos="zoom-out">
         <h1>Experience</h1>
         <p>
           Leveraging hands-on experience in dynamic environments to drive
@@ -13,7 +24,7 @@ const Experience = () => {
         </p>
       </div>
       <div className="content">
-        <div className="history">
+        <div className="history" data-aos="fade-right">
           <div className="company">
             <h1>Novum Global Consultancy</h1>
             <span>Full Stack Developer</span>
@@ -59,7 +70,7 @@ const Experience = () => {
           </div>
         </div>
 
-        <div className="history">
+        <div className="history" data-aos="fade-left">
           <div className="company">
             <h1>Pierian Services Pvt Ltd</h1>
             <span>Technical Associate</span>

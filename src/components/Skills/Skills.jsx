@@ -4,11 +4,20 @@ import RabbitMQ from "../../assets/RabbitMQ.png";
 import Microservice from "../../assets/MicroService.png";
 import mysql from "../../assets/mysql.png";
 import mongodb from "../../assets/mongodb.svg";
+import { useEffect } from "react";
+import AOS from "aos";
 
 const Skills = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in ms
+      once: true, // Whether animation should happen only once
+      easing: "ease-in-out", // Easing function
+    });
+  }, []);
   return (
     <div id="skills">
-      <div id="header">
+      <div id="header" data-aos="zoom-out">
         <h1>Tech Skills</h1>
         <p>
           Mastering in-demand tools and technologies to create efficient,
@@ -17,7 +26,7 @@ const Skills = () => {
         </p>
       </div>
       <div id="content">
-        <div className="skill">
+        <div className="skill" data-aos="fade-up-left">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 48 48"
@@ -36,7 +45,7 @@ const Skills = () => {
           </svg>
           <h6>Node JS</h6>
         </div>
-        <div className="skill">
+        <div className="skill" data-aos="fade-up-left">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 16 16"
@@ -66,7 +75,7 @@ const Skills = () => {
           </svg>
           <h6>React JS</h6>
         </div>
-        <div className="skill">
+        <div className="skill" data-aos="fade-up-left">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 48 48"
@@ -85,7 +94,7 @@ const Skills = () => {
           </svg>
           <h6>Express JS</h6>
         </div>
-        <div className="skill">
+        <div className="skill" data-aos="fade-up-left">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 48 48"
@@ -100,7 +109,7 @@ const Skills = () => {
           </svg>
           <h6>Javascript</h6>
         </div>
-        <div className="skill">
+        <div className="skill" data-aos="fade-up-left">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 48 48"
@@ -119,7 +128,7 @@ const Skills = () => {
           <h6>Python</h6>
         </div>
 
-        <div className="skill">
+        <div className="skill" data-aos="fade-up-left">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 48 48"
@@ -134,32 +143,32 @@ const Skills = () => {
           <h6>Sass</h6>
         </div>
 
-        <div className="skill">
+        <div className="skill" data-aos="fade-up-left">
           <img src={mongodb} alt="mongodb" />
           <h6>Mongo DB</h6>
         </div>
 
-        <div className="skill">
+        <div className="skill" data-aos="fade-up-left">
           <img src={mysql} alt="mongodb" />
           <h6>My SQL</h6>
         </div>
 
-        <div className="skill">
+        <div className="skill" data-aos="fade-up-left">
           <img src={Microservice} alt="mongodb" />
           <h6>Microservice</h6>
         </div>
 
-        <div className="skill">
+        <div className="skill" data-aos="fade-up-left">
           <img src={RabbitMQ} alt="mongodb" />
           <h6>RabbitMQ</h6>
         </div>
 
-        <div className="skill">
+        <div className="skill" data-aos="fade-up-left">
           <img src={API} alt="mongodb" />
           <h6>API</h6>
         </div>
 
-        <div className="skill">
+        <div className="skill" data-aos="fade-up-left">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 48 48"
@@ -173,7 +182,7 @@ const Skills = () => {
           </svg>
           <h6>Tailwind</h6>
         </div>
-        <div className="skill">
+        <div className="skill" data-aos="fade-up-left">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 48 48"
@@ -193,7 +202,7 @@ const Skills = () => {
           </svg>
           <h6>Html</h6>
         </div>
-        <div className="skill">
+        <div className="skill" data-aos="fade-up-left">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 48 48"
@@ -214,7 +223,7 @@ const Skills = () => {
           <h6>CSS</h6>
         </div>
 
-        <div className="skill">
+        <div className="skill" data-aos="fade-up-left">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 48 48"
@@ -229,7 +238,7 @@ const Skills = () => {
           <h6>Git</h6>
         </div>
 
-        <div className="skill">
+        <div className="skill" data-aos="fade-up-left">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 48 48"
@@ -241,7 +250,7 @@ const Skills = () => {
           <h6>Github</h6>
         </div>
 
-        <div className="skill">
+        <div className="skill" data-aos="fade-up-left">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 48 48"

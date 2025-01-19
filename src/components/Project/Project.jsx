@@ -3,12 +3,22 @@ import link from "../../assets/link.png";
 import P1 from "../../assets/P1.png";
 import P2 from "../../assets/P2.png";
 import P3 from "../../assets/P3.png";
+import { useEffect } from "react";
+import AOS from "aos";
 
 const Project = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in ms
+      once: true, // Whether animation should happen only once
+      easing: "ease-in-out", // Easing function
+    });
+  }, []);
+
   return (
     <div id="Project">
-      <div id="header">
-        <h1>Tech Skills</h1>
+      <div id="header" data-aos="zoom-out">
+        <h1>Projects</h1>
         <p>
           Showcasing innovative solutions through real-world projects. Each line
           of code and every design detail reflects my passion for solving
@@ -17,7 +27,7 @@ const Project = () => {
       </div>
 
       <div id="projects">
-        <div className="project">
+        <div className="project" data-aos="fade-up-right">
           <div className="project-image">
             <img src={P2} alt="" />
           </div>
@@ -44,7 +54,7 @@ const Project = () => {
           </div>
         </div>
 
-        <div className="project">
+        <div className="project" data-aos="fade-up-left">
           <div className="project-image">
             <img src={P1} alt="Project.png" />
           </div>
@@ -70,7 +80,7 @@ const Project = () => {
           </div>
         </div>
 
-        <div className="project">
+        <div className="project" data-aos="fade-up-left">
           <div className="project-image">
             <img src={P3} alt="Project.png" />
           </div>

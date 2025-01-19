@@ -6,6 +6,7 @@ import Home from "./components/Home/Home.jsx";
 import Skills from "./components/Skills/Skills.jsx";
 import Project from "./components/Project/Project.jsx";
 import Experience from "./components/Experience/Experience.jsx";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/projects" element={<Project />} />
           <Route path="/experience" element={<Experience />} />
         </Routes>
+        <Analytics />
       </div>
     </Router>
   );
