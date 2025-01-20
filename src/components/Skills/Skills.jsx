@@ -10,9 +10,9 @@ import AOS from "aos";
 const Skills = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration in ms
-      once: true, // Whether animation should happen only once
-      easing: "ease-in-out", // Easing function
+      duration: 1000,
+      once: true,
+      easing: "ease-in-out",
     });
   }, []);
   return (
@@ -45,7 +45,7 @@ const Skills = () => {
           </svg>
           <h6>Node JS</h6>
         </div>
-        <div className="skill" data-aos="fade-up-left">
+        <div className="skill" data-aos="fade-up-right">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 16 16"
@@ -148,7 +148,7 @@ const Skills = () => {
           <h6>Mongo DB</h6>
         </div>
 
-        <div className="skill" data-aos="fade-up-left">
+        <div className="skill" data-aos="fade-up-right">
           <img src={mysql} alt="mongodb" />
           <h6>My SQL</h6>
         </div>
@@ -163,7 +163,7 @@ const Skills = () => {
           <h6>RabbitMQ</h6>
         </div>
 
-        <div className="skill" data-aos="fade-up-left">
+        <div className="skill" data-aos="fade-up-right">
           <img src={API} alt="mongodb" />
           <h6>API</h6>
         </div>
@@ -182,7 +182,7 @@ const Skills = () => {
           </svg>
           <h6>Tailwind</h6>
         </div>
-        <div className="skill" data-aos="fade-up-left">
+        <div className="skill" data-aos="fade-up-right">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 48 48"
@@ -223,7 +223,7 @@ const Skills = () => {
           <h6>CSS</h6>
         </div>
 
-        <div className="skill" data-aos="fade-up-left">
+        <div className="skill" data-aos="fade-up-right">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 48 48"

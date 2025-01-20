@@ -16,6 +16,7 @@
   padding: 10px;
   background-color: #543a14;
   gap: 20px;
+  overflow: hidden;
 
   @include Mixin.md {
     height: 100vh;

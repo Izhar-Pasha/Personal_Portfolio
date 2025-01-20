@@ -44,7 +44,7 @@ const Sidebar = () => {
           href="https://www.linkedin.com/in/izharpasha/"
           target="_blank"
           rel="noopener noreferrer"
-          data-aos="fade-right"
+          data-aos="zoom-in"
         >
           <FaLinkedin />
         </a>

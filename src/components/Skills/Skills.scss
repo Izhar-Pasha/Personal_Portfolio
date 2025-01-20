@@ -16,6 +16,7 @@
   align-items: center;
   padding: 15px 0px 15px 0px;
   gap: 40px;
+  overflow: hidden;
 
   @include Mixin.md {
     height: 100vh;

@@ -80,7 +80,7 @@ const Project = () => {
           </div>
         </div>
 
-        <div className="project" data-aos="fade-up-left">
+        <div className="project" data-aos="fade-up-right">
           <div className="project-image">
             <img src={P3} alt="Project.png" />
           </div>

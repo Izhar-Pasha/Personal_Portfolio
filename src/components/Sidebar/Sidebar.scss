@@ -17,6 +17,7 @@
   align-items: center;
   border-radius: 8px;
   gap: 5px;
+  overflow: hidden;
 
   @include Mixin.md {
     height: 100vh;
