@@ -70,7 +70,7 @@ const Experience = () => {
           </div>
         </div>
 
-        <div className="history" data-aos="fade-left">
+        <div className="history">
           <div className="company">
             <h1>Pierian Services Pvt Ltd</h1>
             <span>Technical Associate</span>

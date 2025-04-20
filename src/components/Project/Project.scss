@@ -50,6 +50,34 @@
       }
     }
 
+    .code-review {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      @include Mixin.md {
+        font-size: 1rem;
+      }
+
+      p {
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.637);
+
+        i {
+          color: white;
+        }
+      }
+
+      #anchor {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.637);
+
+        &:hover {
+          color: white;
+        }
+      }
+    }
+
     #projects {
       height: auto;
       width: 100%;

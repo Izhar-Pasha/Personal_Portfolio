@@ -26,6 +26,20 @@ const Project = () => {
         </p>
       </div>
 
+      <div className="code-review" data-aos="zoom-out">
+        <p>
+          Review my recent work :- <i> Client & Agency management system</i>
+        </p>
+        <a
+          href="https://github.com/Izhar-Pasha/Client-Agency-Management-system"
+          id="anchor"
+          target="blank"
+          rel="nooperner noreference"
+        >
+          View Code
+        </a>
+      </div>
+
       <div id="projects">
         <div className="project" data-aos="fade-up-right">
           <div className="project-image">
@@ -48,7 +62,7 @@ const Project = () => {
               important task with user friendly design patterns.
               <br />
               <br />
-              Techs Used : Node JS, Express JS, React JS, Restfull API's and
+              Techs Used : Node JS, Express JS, React JS, Restfull APIs and
               more....
             </p>
           </div>
