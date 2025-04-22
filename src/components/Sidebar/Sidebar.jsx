@@ -59,7 +59,7 @@ const Sidebar = () => {
       </div>
       <div id="resume">
         <a
-          href="https://drive.google.com/file/d/1SBdDHAIuUNf49At3r93UBMQDWaT74lgM/view?usp=sharing"
+          href="https://drive.google.com/file/d/1R6uAL3XQNcYju8-sIG6f7eczZS1DG40a/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >
